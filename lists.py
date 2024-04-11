@@ -11,6 +11,7 @@ food[0] = "sushi"
 # food.insert(0,"cake")         # insert = add a value at a specific index #
 # food.sort()
 # food.clear()
+print(len(food))
 
 for x in food:
     print(x)
