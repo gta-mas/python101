@@ -27,18 +27,18 @@ def study():
     print("You finished studying")
 
 
-x = threading.Thread(target=eat_breakfast(), args=())
+x = threading.Thread(target=eat_breakfast, args=())
 x.start()
 
-y = threading.Thread(target=drink_tea(), args=())
+y = threading.Thread(target=drink_tea, args=())
 y.start()
 
-z = threading.Thread(target=study(), args=())
+z = threading.Thread(target=study, args=())
 z.start()
 
-x.join()
-y.join()
-z.join()
+# x.join()
+# y.join()
+# z.join()
 
 # eat_breakfast()
 # drink_tea()
