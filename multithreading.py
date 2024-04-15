@@ -10,7 +10,7 @@
 # better to use multithreading
 import threading
 import time
-
+start = time.perf_counter()
 
 def eat_breakfast():
     time.sleep(3)
@@ -46,4 +46,4 @@ z.start()
 
 print(threading.active_count())
 print(threading.enumerate())
-print(time.perf_counter())
+print(time.perf_counter() - start)
